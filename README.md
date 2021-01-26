@@ -1,3 +1,35 @@
+## Kitti Odom to rogbag[210126]
+
+- download kitti odometry dataset
+  - http://www.cvlibs.net/datasets/kitti/eval_odometry.php
+  - grayscale, calibration file, gt poses
+
+- install kitti2bag [[modi]](https://github.com/jeonds1127/kitti2bag/commit/cb8a5174ca3c6a3eeac82c883b4484f9323bbca1)
+
+  - ```
+    $ https://github.com/jeonds1127/kitti2bag.git
+    $ cd kitti2bag
+    $ sudo python setup.py develop
+    ```
+
+- install pykitti
+
+  - ```
+    $ git clone https://github.com/utiasSTARS/pykitti.git
+    $ cd pykitti
+    $ sudo python setup.py develop
+    ```
+
+- run
+
+  - kitti2bag -s 00 ./dataset/
+
+
+
+
+
+---------
+
 # kitti2bag
 
 *Hello everybody! I'm looking for more people that can bring this package to the next level. If you'd like to help you can contact me via the email. I'll be happy for every news contribution!*
